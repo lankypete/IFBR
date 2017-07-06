@@ -1,0 +1,70 @@
+.boats-gear {
+
+
+	&__white-section {
+		@mixin clearfix;
+		background-color: #fff;
+		padding: 2rem;
+		margin-right: -50px;
+		
+	}
+
+	&__white-section div {
+		padding-right: 50px;
+	}
+
+	&__images {
+
+		width: 100%;
+
+		@mixin atLarge {
+			width: 40%;
+			float: left;
+		}
+		
+		
+	}
+
+	&__images__img {
+		border: 2px solid $gold;
+		width: 49%;
+		margin-right: 1%;
+		margin-bottom: 1%;
+		float: left;
+	}
+
+	&__info {
+		width: 100%;
+
+		@mixin atLarge {
+			width: 60%;
+			float: left;
+		}
+
+		&--intro {
+
+			font-size: 1.8rem;
+
+			@mixin atMedium {
+				font-size: 1.85rem;
+			}
+
+			@mixin atLarge {
+				font-size: 2rem;
+			}
+			
+		}
+
+		&--list {
+			font-size: 1.5rem;
+			line-height: 1.5;
+			margin-top: 2rem;
+		}
+	}
+
+
+
+
+
+
+}

@@ -1,5 +1,5 @@
 body {
-	font-family: 'roboto', sans-serif;
+	font-family: 'Abhaya Libre', sans-serif;
 	color: #333;
 }
 
@@ -13,5 +13,12 @@ img {
 }
 
 a {
-	color: $main-orange;
+	color: green;
 }
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+

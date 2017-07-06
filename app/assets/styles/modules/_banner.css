@@ -1,0 +1,35 @@
+.banner {
+	position: relative;
+
+	&__info {
+		visibility: hidden;
+		position: absolute;
+		top: 50%;
+		transform: translatey(-75%);
+		width: 100%;
+		padding-left: 1em;
+		padding-right: 1em;
+		margin: 0 auto;
+		color: #eee;
+		text-align: center;
+		font-size: 2rem;
+		text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+
+		@mixin atMedium {
+			font-size: 2.5rem;
+			text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+		}
+		@mixin atLarge {
+			font-size: 3.1rem;
+		}
+	}
+
+	&__info--visible {
+		visibility: visible;
+	}
+
+	&__photo {
+		width: 100%;
+	}
+
+}

@@ -1,0 +1,30 @@
+.nav-menu {
+
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	float: right;
+	margin-top: 11px;
+
+	@mixin clearfix;
+
+	li {
+		list-style: none;
+		float: left;
+		font-size: 1.4rem;
+		padding: .5em .6em;
+		margin-right: .5em;
+		background-color: rgba(0,0,0, .1);
+	}
+
+	li a {
+		color: #eee;
+		text-decoration: none;
+
+		&:hover {
+			color: #fff;
+			cursor: pointer;
+		}
+	}
+
+}

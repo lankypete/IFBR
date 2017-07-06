@@ -1,0 +1,18 @@
+.about-us {
+
+	&__photo {
+		img {
+			display: block;
+			width: 100%;
+		}
+
+		border: 2px solid $gold;
+		display: block;
+		width: 250px;
+		height: 250px;
+		margin: 0 auto;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+}

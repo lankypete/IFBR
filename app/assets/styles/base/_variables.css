@@ -1,2 +1,10 @@
-$main-blue: #2f5572;
-$main-orange: #d59541;
+$blue1: rgba(47, 129, 202, 1);
+$blue2: rgba(1, 48, 107, 1);
+$blue2semi: rgba(1, 48, 107, 0.5);
+$blue3: #2f4550;
+$blue4: #96a1a7;
+$gold: rgba(127, 123, 110, 1);
+$goldsemi: rgba(127, 123, 110, .8);
+$purp: rgba(6, 26, 75, 1);
+$purp2: rgba(81, 80, 129, 1);
+$purp2semi: rgba(81, 80, 129, .3);
