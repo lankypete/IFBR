@@ -557,7 +557,7 @@ ul, ol {
 		font-size: 1.4rem;
 		padding: .5em .6em;
 		margin-right: .5em;
-		background-color: rgba(0,0,0, .1);
+		/*background-color: rgba(0,0,0, .1);*/
 	}
 
 .nav-menu li a {
@@ -668,6 +668,10 @@ ul, ol {
 		padding: .3rem 0;
 	}
 
+.generic__opaic-white-bg {
+		background-color: rgba(0,0,0, .1);
+	}
+
 .about-us__photo {
 
 		border: 2px solid rgba(127, 123, 110, 1);
@@ -695,6 +699,14 @@ ul, ol {
 		content: "";
 		clear: both;
 		display: table;
+	}
+
+@media (max-width: 530px) {
+
+.boats-gear__white-section {
+			padding: .3rem
+		
+	}
 	}
 
 .boats-gear__white-section div {
@@ -764,7 +776,16 @@ ul, ol {
 			font-size: 1.5rem;
 			line-height: 1.5;
 			margin-top: 2rem;
+
 		}
+
+@media (max-width: 530px) {
+
+.boats-gear__info--list li {
+					padding-bottom: 1.1rem
+				
+			}
+	}
 
 .pricing__banners {
 		display: -webkit-box;
@@ -778,23 +799,31 @@ ul, ol {
 
 	}
 
-@media (min-width: 800px) {
+@media (max-width: 530px) {
+
+.pricing__banners {
+			display: table
+
+	}
 	}
 
-@media (min-width: 1025px) {
-	}
-
-.pricing__banners__banner {
-		width: 100%;
-		border: solid rgba(150,161,167, 0.2);
+/*width: 100%;
+		border: solid rgba($blue4, 0.2);
 		margin-bottom: 2rem;
-		margin-top: 3rem;
+		margin-top: 3rem;*/
 
+@media (max-width: 530px) {
+
+.pricing__banners__banner {
+			display: table-row
+
+	}
 	}
 
 @media (min-width: 800px) {
 
 .pricing__banners__banner {
+			border: solid rgba(150,161,167, 0.2);
 			width: 45%;
 			margin-top: 6rem
 
@@ -814,14 +843,27 @@ ul, ol {
 		text-align: center;
 		position: relative;
 		font-size: 2rem;
+		/*
 		top: -3rem;
 		line-height: 3;
 		width: 10rem;
 		margin: 0 auto -3rem auto;
-		background-color: #fff; 
 		border-radius: 50%;
-		border: solid rgba(150,161,167, 0.2);
+		border: solid rgba($blue4, 0.2);
+		*/
+		background-color: #fff;
 
+	}
+
+@media (max-width: 530px) {
+
+.pricing__banners__banner__length {
+			display: table-cell;
+			width: 50%;
+			height: 5rem;
+			vertical-align: middle
+
+	}
 	}
 
 @media (min-width: 800px) {
@@ -831,7 +873,9 @@ ul, ol {
 			top: -6rem;
 			line-height: 3;
 			width: 19rem;
-			margin: 0 auto -6rem auto
+			margin: 0 auto -6rem auto;
+			border-radius: 50%;
+			border: solid rgba(150,161,167, 0.2)
 
 	}
 	}
@@ -849,10 +893,19 @@ ul, ol {
 	}
 
 .pricing__banners__banner__price {
-		font-size: 3rem;
-		padding: 3rem 0;
+		font-size: 2rem;
+		/*padding: 3rem 0;*/
 		text-align: center;
 
+	}
+
+@media (max-width: 530px) {
+
+.pricing__banners__banner__price {
+			display: table-cell;
+			vertical-align: middle
+
+	}
 	}
 
 @media (min-width: 800px) {
@@ -943,6 +996,23 @@ ul, ol {
 			font-size: 1.1rem
 	}
 		}
+
+.site-footer__text {
+		text-align: center;
+
+	}
+
+@media (min-width: 800px) {
+
+.site-footer__text {
+
+			padding: 2rem 0
+
+	}
+	}
+
+@media (min-width: 1025px) {
+	}
 
 @media (min-width: 800px) {
 	}

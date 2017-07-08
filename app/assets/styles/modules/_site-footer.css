@@ -1,0 +1,18 @@
+.site-footer {
+
+	&__text {
+		text-align: center;
+
+		@mixin atMedium {
+
+			padding: 2rem 0;
+
+		}
+
+		@mixin atLarge {
+
+		}
+
+	}
+
+}
