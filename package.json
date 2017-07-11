@@ -29,6 +29,7 @@
     "gulp-watch": "^4.3.11",
     "postcss-hexrgba": "^0.2.1",
     "postcss-import": "^10.0.0",
+    "postcss-inherit": "^4.0.3",
     "postcss-mixins": "^6.0.0",
     "postcss-nested": "^2.0.2",
     "postcss-simple-vars": "^4.0.0",

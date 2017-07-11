@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre" rel="stylesheet">
-  <title>A site by Dean Pete</title>
+  <title>Island Fishing Boat Rentals</title>
   <meta name="keywords" content="kEyWoRdS">
   <meta name="description" content="sItE dEsCrIpTiOn">
 
@@ -21,27 +21,32 @@
       <div class="site-header__logo">
         <img src="assets/images/ifbr-final-logo.png">
       </div>
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
+      </div>
     <ul class="nav-menu">
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Boats/Gear</a></li>
-      <li><a href="#">Pricing</a></li>
-      <li class="generic__opaic-white-bg"><a href="#">Get In Touch</a></li>
+      <li><a id="about-us-link" href="#about-us">About Us</a></li>
+      <li><a id="boats-gear-link" href="#boats-gear">Boats/Gear</a></li>
+      <li><a id="pricing-link" href="#pricing">Pricing</a></li>
+      <li class="generic__opaic-white-bg"><a id="contact-us-link" href="#contact-us">Get In Touch</a></li>
     </ul>
     </div>
   </header>
 
-  <div class="banner">
+  <div class="banner page-section">
     <picture>
       <source media="(min-width: 530px)" srcset="assets/images/fishing-stock.png">
       <img class="banner__photo" src="assets/images/fishing-stock-small.png">
     </picture>
-    <div class="banner__info banner__info--visible">Vancouver Islands Premium fishing boat rentals</div>
-    <div class="banner__info">Centrally located in Port Alberni, BC. Canada’s Ultimate Fishing Town</div>
-    <div class="banner__info">Offering a first class fishing experience</div>
-    <div class="banner__info">Fast service, less work, more fishing</div>
+    <div class="banner__fader">
+      <div class="banner__info">Vancouver Islands Premium fishing boat rentals</div>
+      <div class="banner__info">Located in Port Alberni, BC. Canada’s Ultimate Fishing Town</div>
+      <div class="banner__info">Offering a first class fishing experience</div>
+      <div class="banner__info">Fast service, less work, more fishing</div>
+    </div>
   </div>
 
-  <div class="about-us generic__page-section generic__page-section--no-padding-top">
+  <div id="about-us" class="about-us generic__page-section page-section" data-matching-link="#about-us-link">
     <div class="wrapper">
       <h2 class="generic__title">About Us</h2>
       <div class="generic__text generic__text--centered">
@@ -53,21 +58,21 @@
       </div>
       <div class="about-us__photo">
         <picture>
-          <img src="assets/images/chrisndoug.png" alt="owners of Island Fishing Boat Rentals">
+          <img class="lazyload" data-srcset="assets/images/chrisndoug.png" alt="owners of Island Fishing Boat Rentals">
         </picture>
       </div>
     </div>
   </div>  
 
-  <div class="boats-gear generic--bg-colour generic__page-section">
-    <h2 class="generic__title generic__title--no-top-margin">Boats and Gear</h2>
+  <div id="boats-gear" class="boats-gear generic--bg-colour generic__page-section page-section" data-matching-link="#boats-gear-link">
+    <h2 class="generic__title">Boats and Gear</h2>
     <div class="wrapper">
       <div class="boats-gear__white-section">
         <div class="boats-gear__images">
-          <img class="boats-gear__images__img" src="assets/images/bng1.png">
-          <img class="boats-gear__images__img" src="assets/images/bng2.png">
-          <img class="boats-gear__images__img" src="assets/images/bng3.png">
-          <img class="boats-gear__images__img" src="assets/images/bng4.png">
+          <img class="boats-gear__images__img lazyload" data-srcset="assets/images/bng1.jpg">
+          <img class="boats-gear__images__img lazyload" data-srcset="assets/images/bng2.jpg">
+          <img class="boats-gear__images__img lazyload" data-srcset="assets/images/bng3.jpg">
+          <img class="boats-gear__images__img lazyload" data-srcset="assets/images/bng4.jpg">
         </div>
 
         <div class="boats-gear__info">
@@ -87,8 +92,8 @@
     </div>
   </div>  
 
-  <div class="pricing generic__page-section">
-    <h2 class="generic__title generic__title--no-top-margin">Pricing</h2>
+  <div id="pricing" class="pricing generic__page-section page-section" data-matching-link="#pricing-link">
+    <h2 class="generic__title">Pricing</h2>
     <div class="wrapper">
       <div class="pricing__banners">
         <div class="pricing__banners__banner">
@@ -127,8 +132,8 @@
     </div>
   </div>
 
-  <div class="contact-us generic__page-section generic--bg-colour">
-    <h2 class="generic__title generic__title--no-top-margin">Contact Us</h2>
+  <div id="contact-us" class="contact-us generic__page-section generic--bg-colour page-section" data-matching-link="#contact-us-link">
+    <h2 class="generic__title">Contact Us</h2>
     <div class="wrapper">
       <div class="contact-us__information">
         <div class="contact-us__information__address">
@@ -149,7 +154,7 @@
 
   <footer class="site-footer">
     <div class="wrapper">
-      <p class="site-footer__text">Copyright &copy; 2017 Island Fishing Boat Rentals. All rights reserved.<a href="#">Get in Touch</a></p>
+      <p class="site-footer__text">Copyright &copy; 2017 Island Fishing Boat Rentals. All rights reserved.</p>
     </div>
   </footer>
 

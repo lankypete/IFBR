@@ -5,7 +5,11 @@
 		@mixin clearfix;
 		background-color: #fff;
 		padding: 2rem;
-		margin-right: -50px;
+
+		@mixin atLarge {
+			margin-right: -50px;
+		}
+		
 
 		@mixin onlySmall {
 			padding: .3rem;
@@ -14,7 +18,11 @@
 	}
 
 	&__white-section div {
-		padding-right: 50px;
+
+		@mixin atLarge {
+			padding-right: 50px;
+		}
+		
 	}
 
 	&__images {
@@ -39,6 +47,10 @@
 
 	&__info {
 		width: 100%;
+
+		@mixin onlySmall {
+			text-align: center;
+		}
 
 		@mixin atLarge {
 			width: 60%;

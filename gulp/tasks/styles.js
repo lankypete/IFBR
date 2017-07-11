@@ -3,7 +3,8 @@ var gulp = require("gulp"),
 postcss = require("gulp-postcss"),
 autoprefixer = require("autoprefixer"),
 cssvars = require("postcss-simple-vars"),
-nested =require("postcss-nested"),
+nested = require("postcss-nested"),
+inherit = require("postcss-inherit"),
 cssImport = require("postcss-import"),
 mixins = require("postcss-mixins"),
 hexrgba = require("postcss-hexrgba");
@@ -13,7 +14,7 @@ hexrgba = require("postcss-hexrgba");
 //(called from gulp cssInject dependancies)
 gulp.task('styles', function() {
 	return gulp.src('./app/assets/styles/styles.css')
-		.pipe(postcss([cssImport, mixins, nested, cssvars, hexrgba, autoprefixer]))
+		.pipe(postcss([cssImport, inherit, mixins, nested, cssvars, hexrgba, autoprefixer]))
 		.on('error', function(errorInfo){ //so that gulp tasks don't quit on accidental css error
 			console.log(errorInfo.toString());
 			this.emit('end');

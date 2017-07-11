@@ -2,7 +2,7 @@
 	position: relative;
 
 	&__info {
-		visibility: hidden;
+		opacity: 0;
 		position: absolute;
 		top: 50%;
 		transform: translatey(-75%);
@@ -14,6 +14,7 @@
 		text-align: center;
 		font-size: 2rem;
 		text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+		transition: opacity .5s ease-out;
 
 		@mixin atMedium {
 			font-size: 2.5rem;
@@ -25,7 +26,7 @@
 	}
 
 	&__info--visible {
-		visibility: visible;
+		opacity: 1;
 	}
 
 	&__photo {
