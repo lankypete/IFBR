@@ -11097,24 +11097,29 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _MobileMenu = __webpack_require__(3);
+var _DavidLazyLoad = __webpack_require__(3);
+
+var _DavidLazyLoad2 = _interopRequireDefault(_DavidLazyLoad);
+
+var _MobileMenu = __webpack_require__(4);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
-var _RevealOnScroll = __webpack_require__(4);
+var _RevealOnScroll = __webpack_require__(5);
 
 var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
 
-var _FadingBanner = __webpack_require__(5);
+var _FadingBanner = __webpack_require__(6);
 
 var _FadingBanner2 = _interopRequireDefault(_FadingBanner);
 
-var _StickyHeader = __webpack_require__(6);
+var _StickyHeader = __webpack_require__(7);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var davidLazyLoad = new _DavidLazyLoad2.default();
 var mobileMenu = new _MobileMenu2.default();
 new _RevealOnScroll2.default((0, _jquery2.default)('.about-us__photo'), "80%");
 new _RevealOnScroll2.default((0, _jquery2.default)('.boats-gear'), "69%");
@@ -11125,6 +11130,45 @@ var stickyHeader = new _StickyHeader2.default();
 
 /***/ }),
 /* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var DavidLazyLoad = function () {
+	function DavidLazyLoad() {
+		_classCallCheck(this, DavidLazyLoad);
+
+		this.fadeInImages();
+	}
+
+	_createClass(DavidLazyLoad, [{
+		key: 'fadeInImages',
+		value: function fadeInImages() {
+			[].forEach.call(document.querySelectorAll('img.d-lazy[data-src]'), function (img) {
+				img.setAttribute('srcset', img.getAttribute('data-src'));
+				img.onload = function () {
+					img.removeAttribute('data-src');
+				};
+			});
+		}
+	}]);
+
+	return DavidLazyLoad;
+}();
+
+exports.default = DavidLazyLoad;
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11172,7 +11216,7 @@ var MobileMenu = function () {
 exports.default = MobileMenu;
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11239,7 +11283,7 @@ var RevealOnScroll = function () {
 exports.default = RevealOnScroll;
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11290,7 +11334,7 @@ var FadingBanner = function () {
 exports.default = FadingBanner;
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11310,7 +11354,7 @@ var _noframework = __webpack_require__(1);
 
 var _noframework2 = _interopRequireDefault(_noframework);
 
-var _jquerySmoothScroll = __webpack_require__(7);
+var _jquerySmoothScroll = __webpack_require__(8);
 
 var _jquerySmoothScroll2 = _interopRequireDefault(_jquerySmoothScroll);
 
@@ -11401,7 +11445,7 @@ var StickyHeader = function () {
 exports.default = StickyHeader;
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!

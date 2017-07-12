@@ -489,6 +489,16 @@ ul, ol {
 		        transform: none;
 	}
 
+img.d-lazy {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+img.d-lazy[data-src] {
+  opacity: 0;
+}
+
 .wrapper {
 	overflow: hidden;
 	width: 98%;
